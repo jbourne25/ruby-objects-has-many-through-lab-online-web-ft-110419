@@ -14,7 +14,8 @@ class Doctor
   end 
   
   def new_appointment(patient_class, date)
-    #creates a new appointment, this appointment should know it belongs to this doctor 
+    #creates a new appointment, this appointment should know it belongs to this doctor
+    appointment = Appointment.new(patient_class, date)
   end 
   
   def appointments 
@@ -24,6 +25,7 @@ class Doctor
   
   def patients 
     #will iterate over this doctor's appointments, then collects the patient that belongs to each appointment 
+    
   end 
   
   
