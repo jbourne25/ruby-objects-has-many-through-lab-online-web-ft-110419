@@ -20,7 +20,7 @@ class Genre
   
   def artists
     #will iterate over the genre's collection of songs, then collects the artist that owns each song 
-    songs.artist 
+    Genre.all.find_all{ |song| song.artist }
   end 
   
 end 
