@@ -2,7 +2,7 @@ class Artist
   
   @@all = []
   
-  attr_accessor :name, :genre  
+  attr_accessor :name, :genre, :song   
   
   def initialize(name)
     @name = name 
@@ -26,7 +26,7 @@ class Artist
   
   def genres 
     #will iterate over the artist's songs, then collects the genre of each song
-    Song.all.find_all{ |song| song.genre == self }
+    Song.all.find_all{ |song| song.genre }
   end 
   
 end 
