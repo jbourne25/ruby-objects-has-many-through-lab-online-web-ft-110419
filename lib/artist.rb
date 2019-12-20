@@ -21,7 +21,7 @@ class Artist
   
   def songs 
     #will iterate through all songs, then finds the song that belongs to the artist 
-    @@all.find{ |song| song.self }
+    @@all.find_all{ |song| song.self }
   end
   
   def genres 
