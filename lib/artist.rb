@@ -26,7 +26,7 @@ class Artist
   
   def genres 
     #will iterate over the artist's songs, then collects the genre of each song
-    songs.all.find_all{ |song| song.genre } 
+    Song.all.find_all{ |song| song.genre } 
   end 
   
 end 
