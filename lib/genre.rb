@@ -14,7 +14,8 @@ class Genre
   end 
   
   def songs 
-    #will iterate over all songs and finds the songs that belong to that genre 
+    #will iterate over all songs and finds the songs that belong to that genre
+    Song.all.find_all{ |song| song.genre }
   end 
   
   def artists
