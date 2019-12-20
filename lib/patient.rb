@@ -21,7 +21,7 @@ class Patient
   
   def appointments
     #will iterate through all the appointments, then returns appointments that belong to the patient 
-    Appointment.all.{ |appointment| appointment.patient }
+    Appointment.all.detect{ |appointment| appointment.patient }
   end 
   
   def doctors 
