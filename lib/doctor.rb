@@ -25,7 +25,7 @@ class Doctor
   
   def patients 
     #will iterate over this doctor's appointments, then collects the patient that belongs to each appointment 
-    
+    @@all.new_appointment.collect{ |appointment| appointment.patient }
   end 
   
   
