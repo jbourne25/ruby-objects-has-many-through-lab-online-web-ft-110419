@@ -1,0 +1,24 @@
+class Genre 
+  
+  @@all = []
+  
+  attr_accessor :name 
+  
+  def initialize(name)
+    @name = name 
+    @@all << self 
+  end 
+  
+  def self.all 
+    @@all 
+  end 
+  
+  def songs 
+    #will iterate over all songs and finds the songs that belong to that genre 
+  end 
+  
+  def artists
+    #will iterate over the genre's collection of songs, then collects the artist that owns each song 
+  end 
+  
+end 
